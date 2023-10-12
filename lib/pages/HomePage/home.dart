@@ -1,7 +1,8 @@
 
 
-import 'package:demo/component/list.dart';
-import 'package:demo/component/tile2.dart';
+import 'package:demo/pages/HomePage/homeComponent/tile1.dart';
+import 'package:demo/pages/HomePage/homeComponent/tile2.dart';
+import 'package:demo/pages/NavBar/navbar.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,13 +13,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Scaffold(
+      drawer: NavBar(),
       backgroundColor:  Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title:const Padding(
-          padding:  EdgeInsets.only(left:28.0),
-          child: Text("Balaji Satta King",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
-        ) ,
+        title:Text("Balaji Satta King",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),) ,
       ),
       body: Container(
         
