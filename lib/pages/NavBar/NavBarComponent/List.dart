@@ -11,8 +11,8 @@ class drawerList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: Icon(icon,color: Colors.white,),
-      title: Text(title,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-      subtitle: Text(subTitle,style: TextStyle(color: Colors.white54),),
+      title: Text(title,style:const TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+      subtitle: Text(subTitle,style:const TextStyle(color: Colors.white54),),
       onTap: onTap,
     );
   }

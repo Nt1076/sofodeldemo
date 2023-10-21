@@ -13,12 +13,12 @@ class NavBar extends StatelessWidget {
         children: [
           UserAccountsDrawerHeader(
           
-            accountName: Text("Rajesh Rajput"),
-             accountEmail: Text("74099059982"),
+            accountName:const Text("Rajesh Rajput"),
+             accountEmail:const Text("74099059982"),
              currentAccountPicture: CircleAvatar(
               child: ClipOval(child: Image.asset("assets/images/img.png"),),
              ),
-             decoration: BoxDecoration(
+             decoration:const BoxDecoration(
               color: Colors.pink
              ),
              ),
@@ -85,7 +85,7 @@ class NavBar extends StatelessWidget {
                   
                 },
                 ),
-                 ListTile(
+                const ListTile(
                   leading: Icon(Icons.logout,color: Colors.white,),
                   title: Text("Log Out",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                  )

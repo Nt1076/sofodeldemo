@@ -10,7 +10,7 @@ class monthlyResult extends StatelessWidget {
     final lastDayOfMonth = DateTime(now.year, now.month + 1, 0);
 
     List<DateTime> dates = [];
-    for (var i = firstDayOfMonth; i.isBefore(lastDayOfMonth); i = i.add(Duration(days: 1))) {
+    for (var i = firstDayOfMonth; i.isBefore(lastDayOfMonth); i = i.add(const Duration(days: 1))) {
       dates.add(i);
     }
 
@@ -24,64 +24,64 @@ class monthlyResult extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.red,
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 48, 136, 203),
-          title: Text('Monthly Result',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
+          backgroundColor:const Color.fromARGB(255, 48, 136, 203),
+          title:const Text('Monthly Result',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
         ),
         body: Container(
-          margin: EdgeInsets.symmetric(horizontal: 11),
+          margin:const EdgeInsets.symmetric(horizontal: 11),
           child: SingleChildScrollView(
             child: Column(
             
               children: [
-                SizedBox(height: 30,),
+               const SizedBox(height: 30,),
                 Row(children: [
           
                 
                   Expanded(child: Container(
                      decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                     child: Center(child: Text("Date",style: TextStyle(color: Colors.white),),),
+                     child:const Center(child: Text("Date",style: TextStyle(color: Colors.white),),),
                   )
                   
                   
                   ),
                   Expanded(child: Container(
                      decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                     child: Center(child: Text("DS",style: TextStyle(color: Colors.white),),),
+                     child:const Center(child: Text("DS",style: TextStyle(color: Colors.white),),),
                   )
                   
                   
                   ),
                   Expanded(child: Container(
                      decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                     child: Center(child: Text("DL",style: TextStyle(color: Colors.white),),),
+                     child:const Center(child: Text("DL",style: TextStyle(color: Colors.white),),),
                   )
                   
                   
                   ),
                   Expanded(child: Container(
                      decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                     child: Center(child: Text("SG",style: TextStyle(color: Colors.white),),),
+                     child:const Center(child: Text("SG",style: TextStyle(color: Colors.white),),),
                   )
                   
                   
                   ),
                   Expanded(child: Container(
                      decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                     child: Center(child: Text("FD",style: TextStyle(color: Colors.white),),),
+                     child:const Center(child: Text("FD",style: TextStyle(color: Colors.white),),),
                   )
                   
                   
                   ),
                   Expanded(child: Container(
                      decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                     child: Center(child: Text("GBD",style: TextStyle(color: Colors.white),),),
+                     child:const Center(child: Text("GBD",style: TextStyle(color: Colors.white),),),
                   )
                   
                   
                   ),
                   Expanded(child: Container(
                      decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                     child: Center(child: Text("GALI",style: TextStyle(color: Colors.white),),),
+                     child:const Center(child: Text("GALI",style: TextStyle(color: Colors.white),),),
                   )
                   
                   
@@ -89,7 +89,7 @@ class monthlyResult extends StatelessWidget {
                   
                 ],),
           
-            SizedBox(height: 24,),
+           const SizedBox(height: 24,),
           
                
                  Container(
@@ -100,7 +100,7 @@ class monthlyResult extends StatelessWidget {
                    
                   
                  child:  ListView.builder(
-                    physics: ScrollPhysics(),
+                    physics:const ScrollPhysics(),
                        itemCount: dates.length,
                        itemBuilder: (context, index) {
                         
@@ -116,45 +116,45 @@ class monthlyResult extends StatelessWidget {
                                  decoration: BoxDecoration(border: Border.all(color: Colors.black,),borderRadius: BorderRadius.circular(6),),
                                  child: Text(
                                   
-                                  "${dates[index].year}/${dates[index].month}/${dates[index].day}",style: TextStyle(color: Colors.white,fontSize: 12,fontWeight: FontWeight.bold),)),
+                                  "${dates[index].year}/${dates[index].month}/${dates[index].day}",style:const TextStyle(color: Colors.white,fontSize: 12,fontWeight: FontWeight.bold),)),
                              
                              Expanded(
                                child: Container(
                                                   decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                                                  child: Center(child: Text("14",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
+                                                  child:const Center(child: Text("14",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
                                                ),
                              ),
                                           Expanded(child: Container(
                                             decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                                            child: Center(child: Text("45",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
+                                            child:const Center(child: Text("45",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
                                    )
                                    
                                    
                                    ),
                                           Expanded(child: Container(
                                             decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                                            child: Center(child: Text("95",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
+                                            child:const Center(child: Text("95",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
                                    )
                                    
                                    
                                    ),
                                           Expanded(child: Container(
                                             decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                                            child: Center(child: Text("36",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
+                                            child:const Center(child: Text("36",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
                                    )
                                    
                                    
                                    ),
                                           Expanded(child: Container(
                                             decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                                            child: Center(child: Text("45",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
+                                            child:const Center(child: Text("45",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
                                    )
                                    
                                    
                                    ),
                                           Expanded(child: Container(
                                             decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(6)),
-                                            child: Center(child: Text("78",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
+                                            child:const Center(child: Text("78",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
                                    )
                                    
                                    

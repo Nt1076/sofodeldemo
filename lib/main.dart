@@ -1,6 +1,8 @@
-import 'package:demo/pages/HomePage/home.dart';
-import 'package:demo/pages/MonthlyResult/monthlyResult.dart';
-import 'package:demo/pages/SignupScreen/signup.dart';
+
+
+
+import 'package:demo/pages/login%20page/loginPage.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:signUp(),
+      home:Login(),
     );
   }
 }

@@ -19,17 +19,17 @@ class fieldText extends StatelessWidget {
                      decoration: InputDecoration(
                      
                       enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(0).copyWith(topLeft:Radius.circular(10),topRight: Radius.circular(10) ),
+                      borderRadius: BorderRadius.circular(0).copyWith(topLeft:const Radius.circular(10),topRight:const Radius.circular(10) ),
                       borderSide:const BorderSide(color: Color.fromARGB(255, 233, 212, 20))
                     ),
-                    focusedBorder: OutlineInputBorder(
+                    focusedBorder:const OutlineInputBorder(
                        borderSide: BorderSide(color: Color.fromARGB(255, 233, 212, 20))
                     ),
                    
                    filled: true,
                    fillColor: Colors.grey[100],
                     hintText: text,
-                    hintStyle: TextStyle(color: Colors.pinkAccent)
+                    hintStyle:const TextStyle(color: Colors.pinkAccent)
                     
                     ),
                   
